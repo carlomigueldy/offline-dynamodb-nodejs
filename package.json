@@ -1,0 +1,17 @@
+{
+  "name": "dynafligmodb",
+  "version": "1.0.0",
+  "description": "A demo project for using DynamoDB with JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "dynamodb",
+    "js",
+    "aws"
+  ],
+  "author": "Carlo Miguel Dy",
+  "license": "ISC"
+}
