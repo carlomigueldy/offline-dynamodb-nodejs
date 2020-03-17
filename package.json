@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "help": "cat help.md",
     "serve": "cd dynamodb && java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb",
-    "list-tables": "aws dynamodb list-tables --endpoint-url http://localhost:8000"
+    "table:list": "aws dynamodb list-tables --endpoint-url http://localhost:8000",
+    "table:drop": "aws dynamodb delete-table --table-name $TABLE --endpoint-url http://localhost:8000",
+    "table:create": "aws dynamodb create-table --cli-input-json $FILEPATH --endpoint-url http://localhost:8000",
+    "table:create:help": "echo it takes an arguement of file:///home/user/dir/tables/YOUR_JSON_FILE.json pass it as FILEPATH=yourfilepath"
   },
   "keywords": [
     "javascript",
