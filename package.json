@@ -10,6 +10,7 @@
     "table:list": "aws dynamodb list-tables --endpoint-url http://localhost:8000",
     "table:drop": "aws dynamodb delete-table --table-name $TABLE --endpoint-url http://localhost:8000",
     "table:create": "aws dynamodb create-table --cli-input-json $FILEPATH --endpoint-url http://localhost:8000",
+    "table:select": "aws dynamodb scan --table-name $TABLE --endpoint-url http://localhost:8000",
     "table:create:help": "echo it takes an arguement of file:///home/user/dir/tables/YOUR_JSON_FILE.json pass it as FILEPATH=yourfilepath"
   },
   "keywords": [
