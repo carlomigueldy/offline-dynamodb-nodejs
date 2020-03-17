@@ -1,5 +1,5 @@
 {
-  "name": "dynafligmodb",
+  "name": "offline-dynamodb-nodejs",
   "version": "1.0.0",
   "description": "A demo project for using DynamoDB with JavaScript",
   "main": "index.js",
